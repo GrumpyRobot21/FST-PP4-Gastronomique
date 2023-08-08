@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{% static 'css/temp.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Nav bar -->
+<div class="navbar">
+  <div class="restaurant-name">Gastronomique</div>
+  <div class="nav-links">
+      <a href="{% url 'home' %}" class="nav-link">Home</a>
+      <a href="/contact/" class="nav-link">Contact</a>
+      {% if user.is_authenticated %}
+          <a href="{% url 'reservations' %}" class="nav-link">Reservations</a>
+          <a href="{% url 'reservation_list' %}" class="nav-link">My Reservations</a>
+          <a href="{% url 'user_logout' %}" class="nav-link">Logout</a>
+      {% else %}
+          <a href="{% url 'user_login' %}" class="nav-link">Login</a>
+          <a href="{% url 'user_registration' %}" class="nav-link">Registration</a>
+      {% endif %}
+  </div>
+</div>
+
+    <!-- Contact form -->
+    <div class="contact-form-container form-container">
+      <form class="contact-form" action="{% url 'contact' %}" method="post">
+        {% csrf_token %}
+        <h2 class="form-heading">Contact Us</h2>
+        {% if form.errors %}
+      <div class="error-text">
+        <ul>
+          {% for field_errors in form.errors %}
+            {% for error in field_errors %}
+              <li>{{ error }}</li>
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="{{ form.phone.id_for_label }}">Phone Number:</label>
+          {{ form.phone }}
+          {% if form.errors.phone %}
+              <p class="error-message error-text">Enter a valid phone number.</p>
+          {% endif %}
+          <small class="error-message error-text">Enter numerical digits only.</small>
+      </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span><b>&copy; Gastronomique 2023</b></span>
+    </footer>
+
+    <script src="{% static 'assets/js/script.js' %}"></script>
+  </body>
+</html>
