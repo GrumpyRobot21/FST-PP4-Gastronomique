@@ -7,7 +7,8 @@ This project demonstrates CRUD functionality (Create, Read, Update, Delete). The
 
 A live website can be found [here](https:///).
 
-![website preview](<img src="assets/images/headerbar.png"?raw=true alt=" picture of the navigation bar"></p>)
+<p align="center">
+  <img src="assets/images/conf-message.png"?raw=true alt=" picture of the navigation bar"></p>
 
 # Table of Contents
 
