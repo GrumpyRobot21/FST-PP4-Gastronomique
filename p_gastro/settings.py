@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-v628z-9%k7vvd%h6o-ff342)m)zx4_26pk$-4qz60)494$%q6$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost',
+    '127.0.0.1',
+    '8000-grumpyrobot-fstpp4gastr-dl0zqnovxri.ws-eu102.gitpod.io',
+    ]
 
 
 # Application definition
@@ -37,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'gastro_app',
 ]
 
 MIDDLEWARE = [
@@ -118,8 +122,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / "gastro_app/static"]
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_URL = '/login/'
+
+LOGIN_REDIRECT_URL = '/reservation_list/'
