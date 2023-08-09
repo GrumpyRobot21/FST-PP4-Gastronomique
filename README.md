@@ -5,10 +5,10 @@ This is my fourth project. This project is a restaurant (Gastronomique) booking 
 
 This project demonstrates CRUD functionality (Create, Read, Update, Delete). The user is able to create, read, update and delete their reservation as well as create a profile and login/logout of the site.
 
-A live website can be found [here](https:///).
+No site is currently publicly available as was unable to get the application running in heroku successfully in the remaining project time available.
 
 <p align="center">
-  <img src="assets/images/conf-message.png"?raw=true alt=" picture of the navigation bar"></p>
+  <img src="assets/images/home-web.png"?raw=true alt=" picture of the navigation bar"></p>
 
 # Table of Contents
 
@@ -27,9 +27,8 @@ A live website can be found [here](https:///).
 -   [4. Testing](#testing)
 -   [5. Development Cycle](#development-cycle)
 -   [6. Deployment](#deployment)
--   [7. End Product](#end-product)
--   [8. Known Bugs](#known-bugs)
--   [9. Credits](#credits)
+-   [7. Known Bugs](#known-bugs)
+-   [8. Credits](#credits)
 
 <a name="ux"></a>
 
@@ -39,7 +38,7 @@ A live website can be found [here](https:///).
 
 A simple online booking system makes ging to a restaurant a stress free and enjoyable experience.
 
-This project provides diners with a simplea and easy way to creat a user profile, make a reservation, update a reservation and delete a reservation.
+This project provides diners with a simplea and easy way to creat a user profile, make a reservation, update a reservation and delete a reservation. It has used defensive programming techniques to protect user details and data from unscrupulous parties.
 
 <a name="strategy"></a>
 
@@ -155,37 +154,37 @@ class Reservations(models.Model):
 ### Wire-frames
 
 Home Page:
-![home_page](docs/wireframes/home.png)
+<p align="center">
+  <img src="assets/images/home.png"?raw=true alt=" picture of the home page"></p>
 
 Conatct Page:
-![contact_page](docs/wireframes/contact_page.png)
+<p align="center">
+  <img src="assets/images/form-page.png"?raw=true alt=" picture of the home page"></p>
 
 Thank you for message Page:
-![thanks_message_page](docs/wireframes/thanks_message_page.png)
+<p align="center">
+  <img src="assets/images/conf-message.png"?raw=true alt=" picture of the home page"></p>
 
 Registration Page:
-![register_page](docs/wireframes/register_page.png)
+<p align="center">
+  <img src="assets/images/form-page.png"?raw=true alt=" picture of the home page"></p>
 
 Login Page:
-![login_page](docs/wireframes/login_page.png)
+<p align="center">
+  <img src="assets/images/form-page-login.png"?raw=true alt=" picture of the home page"></p>
 
 Reservation created successfully Page:
-![res_success_page](docs/wireframes/res_success_page.png)
+<p align="center">
+  <img src="assets/images/conf-message.png"?raw=true alt=" picture of the home page"></p>
 
 My Reservations page:
-![myres_page](docs/wireframes/myres_page.png)
+<p align="center">
+  <img src="assets/images/myreservations.png"?raw=true alt=" picture of the home page"></p>
 
 Make a Reservation Page:
-![make_a_res_page](docs/wireframes/make_a_res_page.png)
+<p align="center">
+  <img src="assets/images/form-page.png"?raw=true alt=" picture of the home page"></p>
 
-Update a reservation page:
-![update_res_page](dos/wireframes/update_res_page.png)
-
-Delete a reservation:
-![delete_res_page](docs/wireframes/delete_res_page.png)
-
-Logout Page:
-![logout_page](docs/wireframes/logout_page.png)
 
 
 <a name="surface"></a>
@@ -213,9 +212,11 @@ The link to the font can be found [here](https://fonts.google.com/specimen/Indie
 ### All Pages
 - The navigation bar is at the top of all the pages. The navigation bar is dynamic so that depending whether or not the user is logged in, the options will change.
 - If the user is not logged in the navigation bar will look like this:
-![user_logged_out](documentation_assets/images/navbar_not_logged_in.png)
+<p align="center">
+  <img src="assets/images/user-logged-out-nav.png"?raw=true alt=" picture of the home page"></p>
 - If the user is logged in the navigation bar will look like this:
-![user_logged_in](documentation_assets/images/navbar_logged_in.png)
+<p align="center">
+  <img src="assets/images/user-logged-in-nav.png"?raw=true alt=" picture of the home page"></p>
 - The footer is placed at the bottom of each page.
 - The restaurant name is placed at the top of all pages. It performs no additional function due to the inclusion of a home button in the navigation links. It dissappears on mobile screes to accomodate the navbar links.
 
@@ -267,12 +268,14 @@ The link to the font can be found [here](https://fonts.google.com/specimen/Indie
 -   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
     
 -   [PostgreSQL](https://www.postgresql.org/) Database
+
+-   [Django](https://www.djangoproject.com/) Framework
     
--   [Gitpod](https://www.gitpod.io/) Cod environment
+-   [Gitpod](https://www.gitpod.io/) Code environment
     
 -   [Chrome](https://www.google.com/intl/en_uk/chrome/) Debugging
     
--   [Figma](https://www.figma.com/) Wireframes
+-   [Miro](https://miro.com/) Wireframes
        
 -   [Google Fonts](https://fonts.google.com/)
     
@@ -288,29 +291,31 @@ The link to the font can be found [here](https://fonts.google.com/specimen/Indie
 ### Google Developer Tools
 Developer tools enabled me to establish which parts of my code were not working and to try options out before settling on my chosen solution. 
 
-I checked the accessibility of the page using lighthouse.
-![google_lighthouse](documentation_assets/images/google_lighthouse.png)
+I checked the accessibility of the page using lighthouse. 
+<p align="center">
+  <img src="assets/images/homepage-lh.png"?raw=true alt=" picture of the home page"></p>
 
 ### Responsive Tools
-I used [Am I Responsive](http://ami.responsivedesign.is) to make sure that all my pages are responsive to all devices.
+I used [Am I Responsive](http://ami.responsivedesign.is) to make sure that all my pages are responsive to all devices. Unable to complete this as heroku deplopyment failed.
 
 ### W3C Validator Tools
-#### HTML:
-I used [W3C Markup](https://validator.w3.org/#validate_by_input+with_options) to check for any errors within the HTML pages.
-#### CSS:
-I used [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) to check for any errors within my CSS stylesheet.
+
+
+I used 
+<p align="center">
+  <img src="assets/images/css-validator-pass.png"?raw=true alt=" picture of the home page"></p> to check for any errors within my CSS stylesheet.
 
 I had no errors in my CSS file:
-![css_validation](docs/images/css_validation.png)
+
 
 ### JavaScript:
 I used [JS Hint](https://jshint.com/) to check for any errors within my JavaScript script tags. 
 
 I had no errors in my JavaScript files:
-![javascript_validation](docs/images/javascript_validation.png)
+
 
 ### Python:
-I used [PEP8 online](http://pep8online.com/) to check for any errors within my Python files. The validator showed multiple "line too long" errors. This was rectified by adding each statement as a new line.
+I used [Pylint](https://pypi.org/project/pylint/) pep8 validator to check for any errors within my Python files inside the IDE. The validator showed multiple "line too long" errors. This was rectified by adding each statement as a new line.
 
 There were also "line too long" errors within my settings.py file but I have chosen to ignore these as this is a very important file and despite trying to rectify these errors I was unsuccessful.
 
@@ -346,92 +351,46 @@ TEST            | OUTCOME                          | PASS / FAIL
 --------------- | -------------------------------- | ---------------
 Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
 Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
-Accessibility | Checked the accessibility of the page using lighthouse| PASS
-
-![index_google_lighthouse](documentation_assets/images/index_google_lighthouse.png)
-
-### Menu page
-TEST            | OUTCOME                          | PASS / FAIL  
---------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
-Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
-Book now button | When clicking the book now button on the page, the browser redirects to the booking page. | PASS
-Accessibility | Checked the accessibility of the page using lighthouse| PASS
-
-![menu_google_lighthouse](documentation_assets/images/menu_google_lighthouse.png)
+Accessibility | 
 
 ### Contact page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
 Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
-Book now button | When clicking the book now button on the page, the browser redirects to the booking page. | PASS
-Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Contact Form | Checked the form submits only when all fields are filled out. | PASS
+Submit button | When clicking the book now button on the page, the browser redirects to the booking page. | PASS
+Accessibility | Contact Form | Checked the form submits only when all fields are filled out. | PASS
 
-![contact_google_lighthouse](documentation_assets/images/contact_google_lighthouse.png)
 
-### Booking page
+### Reservations page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
 Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
-Book now button | When clicking the book now button on the page, the browser redirects to the booking page. | PASS
-Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Booking Form | Checked the form submits only when all required fields are filled out. | PASS
-If not signed in | Checked to see if the user has not signed in the booking form should not show and a message displays prompting the user to signup/sign-in first. | PASS
+Submit Button | When clicking the Submit button on the page, the browser redirects to the reservation was successful page. | PASS
+Accessibility | Booking Form | Checked the form submits only when all required fields are filled out. | PASS
+If not signed in | Checked to see if the user has not signed in the booking form should not show and directed to signup/sign-in first. | PASS 
+Form validation |Checked that the telephone number input only allows number input and not any text | PASS
 
-![booking_google_lighthouse](documentation_assets/images/booking_google_lighthouse.png)
-
-### Edit booking page
+### Registration page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
 Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
-Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Edit Booking Form | Checked the form submits only when all required fields are filled out. | PASS
-Form validation | Checked that the telephone number input only allows number input and not any text | PASS
+Accessibility | Registration Form | Checked the form submits only when all required fields are filled out. | PASS
+Register form | Checked the form submits only when all required fields are filled out. | PASS
+Log in | Checked the page redirects to the Log-in page. | PASS
 
-![edit_booking_google_lighthouse](documentation_assets/images/edit_booking_google_lighthouse.png)
 
-### Manage booking page
+### Update Reservation page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
 Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
-Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Edit booking button | Checked that the button redirects to the edit booking page with the correct booking instance. | PASS
-Cancel booking button | Checked that the button redirects to the cancel booking page with the correct booking instance. | PASS
+Accessibility | Update button | Checked that the button redirects to the edit reservations page with the correct booking instance. | PASS
+Cancel reservation button | Checked that the button redirects to the cancel booking page with the correct booking instance. | PASS
 
-![manage_booking_google_lighthouse](documentation_assets/images/manage_booking_google_lighthouse.png)
-
-### Create profile page
-TEST            | OUTCOME                          | PASS / FAIL  
---------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
-Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
-Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Create profile form | Checked the form submits only when all required fields are filled out. | PASS
-If the profile has not been created | Checked to see if the user has created a profile, if not it will redirect the user to the create profile page | PASS
-Form validation | Checked that the telephone number input only allows number input and not any text | PASS
-
-![create_profile_validation](documentation_assets/images/create_profile_input_validation.png)
-![create_profile_google_lighthouse](documentation_assets/images/create_profile_google_lighthouse.png)
-
-
-### Edit profile page
-TEST            | OUTCOME                          | PASS / FAIL  
---------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
-Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
-Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Edit profile form | Checked the form submits only when all required fields are filled out. | PASS
-Form validation | Checked that the telephone number input only allows number input and not any text | PASS
-If the profile has not been created | Checked to see if the user has created a profile, if not it will redirect the user to the create profile page | PASS
-
-![edit_profile_google_lighthouse](documentation_assets/images/edit_profile_google_lighthouse.png)
-
-### Register page
+### Delete Registration page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
@@ -440,18 +399,13 @@ Accessibility | Checked the accessibility of the page using lighthouse| PASS
 Register form | Checked the form submits only when all required fields are filled out. | PASS
 Sign in link | Checked the sign-in link redirects to the sign-in page. | PASS
 
-![signup_google_lighthouse](documentation_assets/images/sign_up_google_lighthouse.png)
-
-### Sign in page
+### Log in page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
 Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
-Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Sign in form | Checked the form submits only when all required fields are filled out. | PASS
-Signup link | Checked the signup link redirects to the signup page. | PASS
-
-![sign_in_google_lighthouse](documentation_assets/images/sign_in_google_lighthouse.png)
+Accessibility | Log in form | Checked the form submits only when all required fields are filled out. | PASS
+Signup link | Checked the login link redirects to the reservations page. | PASS
 
 <a name="development-cycle"></a>
 
@@ -461,9 +415,9 @@ Signup link | Checked the signup link redirects to the signup page. | PASS
 
 ## Project Checklist
 - Install Django and the supporting libraries
-    -  Install Django and Gunicorn. Gunicorn is the server I am using to run Django on Heroku.
-    - Install support libraries including psycopg2, this is used to connect the PostgreSQL database
-    - Install Cloudinary libraries, this is a host provider service that stores images
+    - Install Django and Gunicorn. Gunicorn is the server I am trying to get to run Django on Heroku.
+    - Install support libraries including psycopg2, this is used to connect the Elephant PostgreSQL database
+    - Install Cloudinary libraries, this is a host provider service that stores static files for the project
     - Create the requirements.txt file. This includes the project's dependencies allowing us to run the project in Heroku.
 
 - Create a new, blank Django Project
@@ -513,7 +467,7 @@ Signup link | Checked the signup link redirects to the signup page. | PASS
         - Create a Procfile
 
 - Deploy new empty project to Heroku
-![initial_heroku_deployment](documentation_assets/images/initial_deployment_successful.png)
+
 
 <a name="deployment"></a>
 
@@ -529,7 +483,7 @@ I used the terminal to deploy my project locally. To do this I had to:
 5. Go to local host address on my web browser.
 6. All locally saved changes will show up here.
 
-For the final deployment to Heroku, I had to:
+For the final deployment to Heroku, I unsuccessfully tried to:
 1. Uncomment the PostgreSQL databse from my settings.py file.
 2. Set debug = False in my settings.py file.
 3. Commit and push all files to GitHub
@@ -537,63 +491,8 @@ For the final deployment to Heroku, I had to:
 4. In the deploy tab, go to the manual deploy sections and click deploy branch.
 
 I had an issue with the deployed site and the CSS was not showing on my screen.
-This was rectified by restarting all dynos in Heroku.
+I could not rectify the issue preventing me from running the application successfull;y innHeroku due to extreme time limitations.
 
-<a name="end-product"></a>
-
-# 7. End Product
-
-[Go to the top](#table-of-contents)
-
-Home Page:
-![home_page_desktop_preview](documentation_assets/images/homepage_desktop_preview.png)
-
-![home_page_mobile_preview](documentation_assets/images/homepage_mobile_preview.png)
-
-Menu Page:
-![menu_desktop_preview](documentation_assets/images/menu_desktop_preview.png)
-
-![menu_mobile_preview](documentation_assets/images/menu_mobile_preview.png)
-
-Contact Page:
-![contact_desktop_preview](documentation_assets/images/contact_deskop_preview.png)
-
-![contact_mobile_preview](documentation_assets/images/contact_mobile_preview.png)
-
-Book Now Page:
-![booking_desktop_preview](documentation_assets/images/booking_desktop_preview.png)
-
-![booking_mobile_preview](documentation_assets/images/booking_mobile_preview.png)
-
-Manage Booking Page:
-![manage_booking_desktop_preview](documentation_assets/images/manage_booking_desktop_preview.png)
-
-![manage_booking_mobile_preview](documentation_assets/images/manage_booking_mobile_preview.png)
-
-Edit Booking Page:
-![edit_booking_desktop_preview](documentation_assets/images/edit_booking_desktop_preview.png)
-
-![edit_booking_mobile_preview](documentation_assets/images/edit_booking_mobile_preview.png)
-
-Edit Profile Page:
-![edit_profile_desktop_preview](documentation_assets/images/edit_profile_desktop_preview.png)
-
-![edit_profile_mobile_preview](documentation_assets/images/edit_profile_mobile_preview.png)
-
-Register Page:
-![register_desktop_preview](documentation_assets/images/register_desktop_preview.png)
-
-![register_mobile_preview](documentation_assets/images/register_mobile_preview.png)
-
-Sign In Page:
-![sign_in_desktop_preview](documentation_assets/images/sign_in_desktop_preview.png)
-
-![sign_in_mobile_preview](documentation_assets/images/sign_in_mobile_preview.png)
-
-Sign Out Page:
-![sign_out_desktop_preview](documentation_assets/images/sign_out_desktop_preview.png)
-
-![sign_out_mobile_preview](documentation_assets/images/sign_out_mobile_preview.png)
 
 <a name="known-bugs"></a>
 
@@ -601,9 +500,7 @@ Sign Out Page:
 
 [Go to the top](#table-of-contents)
 
-- Some items in the navigation bar don't have a is active red background to show the user they are on the selected page.
-
-- Some forms for this project is built by using the django-crispy-forms libraries therefore, some of the fields do not contain all the validation rules as I cannot target the individual inputs. For example on the edit profile form, I have add the validation rule so that the user can only enter a number, however I couldnt not figure out a way to add a min and max length value.
+- Heroku deployment has failed. Further analysis is required to figure out and remedy the issues.
 
 <a name="credits"></a>
 
@@ -611,25 +508,10 @@ Sign Out Page:
 
 [Go to the top](#table-of-contents)
 
-### Code
--   The navigation bar came from [Bootstrap](https://getbootstrap.com/docs/5.0/components/navbar).
-
-- The JavaScript code to set the online booking form to default to the current date came from [Stack Overflow](https://stackoverflow.com/questions/6982692/how-to-set-input-type-dates-default-value-to-today).
-
-- The JavaScript code to disable any previous dates on the online booking form came from [Demo2s](https://www.demo2s.com/javascript/javascript-input-date-input-type-date-disable-dates-before-today.html).
 
 ### Content
--   The restaurant logo came from [Adobe Creative Cloud Express logo maker](https://www.adobe.com/express/create/logo).
-
--   The dragon image from the home page came from [PNGItem](https://www.pngitem.com/middle/wRmbRx_red-dragon-png-red-chinese-dragon-png-transparent/).
-
--   The banner image from the home page came from [PNGItem](https://pngtree.com/freebackground/chinese-food-pasta-simple-white-banner_1059420.html).
-
--   The Chinese food image on the menu page came from [Google Images](tinyurl.com/68hzut9u).
-
--   The Chinese food image on the menu page came from [Google Maps](https://www.maps.ie/create-google-map/).
-
+-   All images came from Pexels - https://www.pexels.com/
 ### Project Acknowledgements
-- Code Institue Tutor Support - For directing me to the correct solutions for any bugs.
+- Code Institue Tutor Support - For directing me to the correct solutions for many bugs.
 
-- My Mentor - For his constructive criticism and always pushing me to go further to develop my skills.
+- My Mentor Marcel - For his constructive criticism and always pushing me to go further to develop my skills, being supportive and knowledgable.
