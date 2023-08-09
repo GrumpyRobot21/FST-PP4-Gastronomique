@@ -466,7 +466,11 @@ Signup link | Checked the login link redirects to the reservations page. | PASS
         - Create directories for media, static and templates in the project workspace
         - Create a Procfile
 
-- Deploy new empty project to Heroku
+- Deploy new empty project to Heroku - not successful
+
+- Employ agile prwcties by ustilising project kanban board and loggin issues
+<p align="center">
+  <img src="assets/images/project repository.png"?raw=true alt=" picture of the project board"></p>
 
 
 <a name="deployment"></a>
