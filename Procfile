@@ -1,1 +1,1 @@
-web: gunicorn gastro_app.wsgi
+web: gunicorn p_gastro.wsgi

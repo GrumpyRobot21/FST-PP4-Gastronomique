@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '8000-grumpyrobot-fstpp4gastr-dl0zqnovxri.ws-eu102.gitpod.io',
+    'gastro-app-660ea360cd4d.herokuapp.com',
     ]
 
 
