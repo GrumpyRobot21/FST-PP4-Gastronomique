@@ -223,7 +223,8 @@ body {
 }
 
 .reservation-list-container {
-    background-image: url('/static/images/contact-pic.jpg');
+    https://res.cloudinary.com/dsfcbqsrk/image/upload/v1/static/images/main-banner.de06c6b8f82b.jpg
+    background-image: url('https://res.cloudinary.com/dsfcbqsrk/image/upload/v1/static/images/contact-pic.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
