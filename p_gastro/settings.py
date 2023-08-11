@@ -12,9 +12,10 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 import dj_database_url
 if os.path.isfile('env.py'):
-     import env
-
-print("DEBUG SECRET_KEY:", os.environ.get('SECRET_KEY'))
+    try:
+        import env
+    except ImportError:
+        pass
 
 from pathlib import Path
 
@@ -34,8 +35,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
+    # 'localhost',
+    # '127.0.0.1',
     '8000-grumpyrobot-fstpp4gastr-dl0zqnovxri.ws-eu102.gitpod.io',
     'gastro-app-660ea360cd4d.herokuapp.com',
     ]
@@ -64,6 +65,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
+    'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
+    'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
+}
 
 ROOT_URLCONF = 'p_gastro.urls'
 
@@ -139,6 +146,9 @@ STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 
 
 
