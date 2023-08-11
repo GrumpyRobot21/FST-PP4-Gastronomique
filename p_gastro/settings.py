@@ -14,6 +14,8 @@ import dj_database_url
 if os.path.isfile('env.py'):
      import env
 
+print("DEBUG SECRET_KEY:", os.environ.get('SECRET_KEY'))
+
 from pathlib import Path
 
 development = os.environ.get('DEVELOPMENT', False)
@@ -92,8 +94,8 @@ WSGI_APPLICATION = 'p_gastro.wsgi.application'
 # }
 
 DATABASES = {
-     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
- }
+    'default': dj_database_url.config(default=os.environ.get("DATABASE_URL"))
+}
 
 
 
