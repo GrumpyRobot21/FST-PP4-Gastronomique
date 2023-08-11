@@ -282,7 +282,7 @@ body {
 
 /* Style for the delete reservations page container */
 .page-container {
-    background-image: url('/static/images/contact-pic.jpg');
+    background-image: url('https://res.cloudinary.com/dsfcbqsrk/image/upload/v1/static/images/contact-pic.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -416,7 +416,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('/static/images/contact-pic.jpg');
+    background-image: url('https://res.cloudinary.com/dsfcbqsrk/image/upload/v1/static/images/contact-pic.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
