@@ -31,7 +31,7 @@
 </div>
 
     <!-- Contact form -->
-    <div class="contact-form-container form-container">
+   <div class="contact-form-container form-container" style="background-image: url('{% static "images/contact-pic.jpg" %}');">
       <form class="contact-form" action="{% url 'contact' %}" method="post">
         {% csrf_token %}
         <h2 class="form-heading">Contact Us</h2>

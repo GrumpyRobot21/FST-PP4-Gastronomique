@@ -30,9 +30,9 @@
 
 {% block content %}
     <!-- delete Reservations form -->
-    <div class="contact-form-container">
+    <div class="contact-form-container" style="background-image: url('{% static "images/contact-pic.jpg" %}');"></div>
         <div class="contact-form">
-            <div class="form-heading"><strong>Delete Reservation</strong></div>
+           <div class="form-heading"><strong>Delete Reservation</strong></div>
         <p class="form-paragraph"><strong>Are you sure you want to delete this reservation?</strong></p>
         <form method="post">
             {% csrf_token %}
