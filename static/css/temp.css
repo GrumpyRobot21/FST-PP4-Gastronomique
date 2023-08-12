@@ -223,7 +223,6 @@ body {
 }
 
 .reservation-list-container {
-    /* background-image: url('https://res.cloudinary.com/dsfcbqsrk/image/upload/v1/static/images/contact-pic.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -416,7 +415,6 @@ button:hover {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('https://res.cloudinary.com/dsfcbqsrk/image/upload/v1/static/images/contact-pic.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -524,14 +522,14 @@ button:hover {
     }
 }
 
-/* Hide the menu icon by default on larger screens */
-.menu-icon {
+/* Hide menu icon by default on larger screens */
+/* .menu-icon {
     display: none;
     cursor: pointer;
     padding: 10px;
-}
+} */
 
-/* Show nav-links and restaurant name by default on larger screens */
+/* nav-links and restaurant name default for larger screens */
 @media screen and (min-width: 769px) {
     .nav-links {
         display: flex;
@@ -542,7 +540,7 @@ button:hover {
     }
 }
 
-/* Show menu icon for smaller screens and hide restaurant-name */
+/* menu icon for smaller screens plus hide restaurant-name */
 @media screen and (max-width: 768px) {
     .menu-icon {
         display: block;
@@ -551,7 +549,7 @@ button:hover {
         display: none;
     }
 
-    /* Show nav-links in a stacked menu for smaller screens */
+    /* nav-links stacked menu for smaller screens */
     .nav-links.show {
         display: flex;
         flex-direction: column;
@@ -584,7 +582,7 @@ button:hover {
     height: auto;
 }
 
-/* Media queries for responsive design */
+/* Media queries for responsivness */
 @media screen and (max-width: 768px) {
     .navbar .nav-links.show {
         display: flex;
@@ -615,9 +613,9 @@ th, td {
     border-bottom: 1px solid #ddd;
 }
 
-/* Media query for mobile screens */
+/*for mobile phone */
 @media only screen and (max-width: 600px) {
-    /* Hide certain columns on mobile */
+    /* Hide specifc columns on mobile */
     .hide-on-mobile {
         display: none;
     }
@@ -629,18 +627,18 @@ th, td {
         margin-bottom: 10px;
     }
 
-    /* Reset table header */
+    /* Table header reset */
     th {
         display: none;
     }
 
-    /* Display the table data as block elements */
+    /* Display table as block elements */
     td {
         display: block;
         text-align: right;
     }
     
-    /* Add some spacing between each table cell */
+    /* Add space between each cell */
     td::before {
         content: attr(data-label);
         font-weight: bold;
