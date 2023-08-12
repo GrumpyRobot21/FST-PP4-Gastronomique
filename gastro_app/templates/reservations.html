@@ -28,7 +28,6 @@
   </div>
 
 <!-- Reservations form -->
-<div class="contact-form-container form-container reservation-form-container">
 <div class="contact-form-container form-container reservation-form-container" style="background-image: url('{% static "images/contact-pic.jpg" %}');"></div>    
     <form action="{% url 'reservations' %}" method="post" class="contact-form">
         {% csrf_token %}
